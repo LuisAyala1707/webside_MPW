@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <script src="../js/bootstrap.min.js"></script>
+    <title>Formulario de registro de persona con alzheimer</title>
+
+</head>
+<body >
+    <img src="../img/banner2.jpg" alt="" width="100%">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Catalogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/Contactenos.html">Contactenos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/PQR.html">Peticiones Quejas y Reclamos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/Trabaja_con_nosotros.html">Trabaja con nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/fromulario_persona_Alzheimer.html">Formulario de persona con Alheimer</a>
+              </li>
+            </ul>
+            <span class="navbar-text">*-*</span>
+          </div>
+        </div>
+    </nav><br>
+    <div class="container">
+        <div class="caja">
+            <form id="allForm" class="px-4 py-3">
+                <h1 class="text-center">Formulario de información de la persona con Alzheimer</h1><br>
+                <div class="text-center">
+                  <img src="../img/f.alzheimer png.png" width="300px" class="img-fluid" >
+                </div>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label" >Nombre</label><br>
+                    <input type="text" class="form-control" name="nombre" id="nombre" >
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label" >Apellidos</label><br>
+                    <input type="text" class="form-control" name="apellido" id="apellido" >
+                </div>
+                <div class="mb-3">
+                    <label for="edad" class="form-label" >Edad</label><br>
+                    <input type="number" class="form-control" name="edad" id="edad" >
+                </div>
+                <div class="mb-3">
+                    <label for="cedula" class="form-label" >Identificación</label><br>
+                    <input type="number" class="form-control" name="cedula" id="cedula" >
+                </div>
+                <div class="mb-3">
+                    <label for="tipoSangre" class="form-label" >Tipo Sanguíneo</label><br>
+                    <input type="text" class="form-control" name="tipoSangre" id="tipoSangre" >
+                </div>
+                <div class="mb-3">
+                    <label for="otraEnfermedad" class="form-label" >Otra Enfermedad</label><br>
+                    <input type="text" class="form-control" name="otraEnfermedad" id="otraEnfermedad" >
+                </div>
+                <div class="mb-3">
+                    <label for="direccionResidencia" class="form-label" >Direccion de Residencia</label><br>
+                    <input type="text" class="form-control" name="direccionResidencia" id="direccionResidencia" >
+                </div>
+                <div class="mb-3">
+                    <label for="eps" class="form-label" >Eps</label><br>
+                    <input type="text" class="form-control" name="eps" id="eps" >
+                </div>
+
+                <div class="caja">
+                  <div class="row">
+                      <div class="row row-cols-1 row-cols-lg-2">
+                        <div class="col">
+                          <div  class="text-center">
+                            <button id="botonDeEnvio" class="btn btn-success btn-lg text-center" >Añadir</button>
+                          </div>
+                        </div>
+              
+                        <div class="col">
+                          <div  class="text-center">
+                            <button a class="btn btn-warning btn-lg text-center" ><a href="../datatables_custom/tabla_registros.html">Tabla de registros</a></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+            </form>
+        </div>
+      <div class="caja">
+          <div class="row">
+                <h1 class="text-center">Tabla de información</h1><br>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <form class="d-flex text-center">
+                    <div class="table-responsive">
+                      <table  id="transationTable"  class="table table-success table-striped table-hover"  >
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>Edad</th>
+                            <th>Identificación</th>
+                            <th>Tipo Sanguíneo</th>
+                            <th>Otra Enfermedad</th>
+                            <th>Dirección de Residencia</th>
+                            <th>Eps</th>
+                            <th>Eiminar</th>
+                        <!--<th>Editar</th>-->
+                        </tr> 
+                    </table>
+                    </div>
+                  </form>
+                </div>
+          </div>
+      </div>
+    </div>
+    <script src="../js/FormulariPequeño.js"></script>
+</body>
+</html>

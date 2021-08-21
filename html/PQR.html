@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <script src="../js/bootstrap.min.js"></script>
+    <title>Peticiones, Quejas Y Reclamos</title>
+</head>
+<body>
+  <img src="../img/banner2.jpg" alt="" width="100%">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+  
+              <!--
+              <li class="nav-item">
+                <a class="nav-link" href="#">Catalogo</a>
+              </li>
+              -->
+  
+              <li class="nav-item">
+                <a class="nav-link" href="../html/Contactenos.html">Contactenos</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="../html/PQR.html">Peticiones Quejas y Reclamos</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="../html/Trabaja_con_nosotros.html">Trabaja con nosotros</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../html/fromulario_persona_Alzheimer.html">Formulario de persona con Alheimer</a>
+              </li>
+            </ul>
+  
+            <span class="navbar-text">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">  
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/inicio_sesión.html">Inicia Sesión</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/Registrate.html">Registrate</a>
+                </li>
+              </ul>
+            </span>
+          </div>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container">
+        <div class="caja">
+            <h1 class="text-center">Peticiones Quejas y Reclamos</h1>
+            <div class="text-center">
+              <img src="../img/Peticiones-quejas-y-reclamos.png" width="400px" class="img-fluid" >
+            </div>
+            <form id="allForm" class="px-4 py-3"><!--agrega padin al formulario-->
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Digite su nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" name="telefono" id="telefono"  placeholder="Digite numero de telefono">
+                </div>
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" name="correo" id="correo"  placeholder="Juanito@ejemplo.com">
+              </div>
+              <div class="mb-3">
+                <label for="asunto" class="form-label">Asunto</label>
+                <input type="text" class="form-control" name="asunto" id="asunto"  placeholder="Escriba el asunto">
+              </div>
+              <div class="mb-3">
+                <label for="direccion" class="form-label">Dirección</label>
+                <input type="text" class="form-control" name="direccion" id="direccion"  placeholder="Escriba su Dirección">
+              </div>
+              <br>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Escriba su peticion queja o reclamo" name="mensaje" id="mensaje"  style="height: 100px"></textarea>
+                <label for="mensaje">Escriba su peticion queja o reclamo</label>
+              </div><br>
+              <label for="seleccion">Medio por el cual desea recibir
+                la respuesta</label>
+                <select class="form-select" name="seleccion" id="seleccion" aria-label="Default select example">
+                    <option selected>Seleccione</option>
+                    <option value="Correo electronico">Correo electronico</option>
+                    <option value="llamada Telefonica">llamada Telefonica</option>
+                    <option value="Videoconferencia">Videoconferencia</option>
+                </select>
+              <br>
+              <button type="submit" id="botonDeEnvio" class="btn btn-success btn-lg">Enviar Formulario</button>
+            </form>
+        </div>
+
+        
+    </div><br>
+    <footer class="pie" class="text-center">
+          <p class="text-center">
+            Todos los Derechos Reservados &copy; 2021 <br />
+            Diseñado por Luis Ayala, Jenifer Barraza, David Pérez <br />
+            www.dominio.com
+          </p>
+      </footer>
+      <script src="../js/PQRS.js"></script>
+</body>
+</html>

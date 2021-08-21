@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <script src="../js/bootstrap.min.js"></script>
+    <title>Mi Cuenta</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              
+              <!--
+              <li class="nav-item">
+                <a class="nav-link" href="#">Catalogo</a>
+              </li>
+              -->
+              
+              <li class="nav-item">
+                <a class="nav-link" href="../html/Contactenos.html">Contactenos</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="../html/PQR.html">Peticiones Quejas y Reclamos</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="../html/Trabaja_con_nosotros.html">Trabaja con nosotros</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../html/fromulario_persona_Alzheimer.html">Formulario de persona con Alheimer</a>
+              </li>
+              
+            </ul>
+            
+            <span class="navbar-text">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </span>
+          </div>
+        </div>
+    </nav><br>
+
+    <div class="container">
+        <div class="caja">
+            <h1 class="text-center">Mi cuenta</h1><br><br>
+
+            <form class="d-flex" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <!--<input class="form-control me-2" type="search" placeholder="" aria-label="Search">-->
+                
+                <div class="row row-cols-1 row-cols-lg-2" >
+
+                    <div class="col">
+                        <div >
+                          <img src="../img/retrato.jpg" class="img-fluid">
+                        </div>
+                    </div>
+
+                    
+                  <div class="col">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control " name="nombres" id="nombres" placeholder="Nombre y apellidos">
+
+                    <label for="identificación">Número de Identificación</label>
+                    <input type="number" class="form-control me-2" name="identificación" id="identificación" placeholder="Número de identificación ">
+
+                    <label for="telcelular">Telefono Celular</label>
+                    <input type="number" class="form-control me-2" name="telcelular" id="telcelular" placeholder="Número Celular">
+
+                    <label for="telfijo">Telefono Fijo</label>
+                    <input type="number" class="form-control me-2" name="telfijo" id="telfijo" placeholder="Número Fijo">
+
+                    <label for="cedula">Dirección de residencia</label>
+                    <input type="direccion" class="form-control me-2" name="direccion" id="direccion" placeholder="Dirección">
+
+                    <label for="correo" class="form-label">Correo Electronico</label> 
+                    <input type="email" class="form-control" id="correo" placeholder="Juanito@ejemplo.com">
+                  </div>
+                </div>
+  
+            </form>
+        </div>
+
+        <div class="caja">
+            <h2 class="text-center">Lista de Formularios</h2>
+
+            <label for="seleccion">Seleccione el formulario que desea visualizar</label>
+            <select class="form-select" name="seleccion" id="seleccion" aria-label="Default select example">
+                <option selected>Seleccione</option>
+                <option value="formulario 1">Formulario 1</option>
+                <option value="formulario 2">Formulario 2</option>
+                <option value="formulario 3">Formulario 3</option>
+            </select>
+        </div>
+
+        <div class="caja">
+            <h2 class="text-center">Agregar nuevo formulario</h2>
+            <hr>
+            <p class="text-center">
+                Para agregar nuevo formulario de persona con Alzheimer precione "Nuevo"
+            </p>
+            <div class="text-center">
+                <button type="button" name="newForm" id="newForm" class="btn btn-success btn-lg" href="../html/fromulario_persona_Alzheimer.html">Nuevo</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+</html>

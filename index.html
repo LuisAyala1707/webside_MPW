@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <title>Principal</title>
+  </head>
+
+  <body onload="mostrar();">
+
+    <img src="img/banner2.jpg" alt="" width="100%">
+
+    <div>
+      
+    
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Bienvenido a Lost-Old</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Con esta herramienta podras filtrar dentro de nuetra base de datos la informacion de la persona perdida, como nombre, identificación o escanear el código Qr de su pulsera.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendido</button>
+              <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <!--
+              <li class="nav-item">
+              <a class="nav-link" href="#">Catalogo</a>
+              </li>
+            -->
+            
+
+            <li class="nav-item">
+              <a class="nav-link" href="html/Contactenos.html">Contactenos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="html/PQR.html">Peticiones Quejas y Reclamos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="html/Trabaja_con_nosotros.html">Trabaja con nosotros</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="html/fromulario_persona_Alzheimer.html">Formulario de persona con Alheimer</a>
+            </li>
+
+            
+          </ul>
+
+          <span class="navbar-text">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="html/inicio_sesión.html">Inicia Sesión</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="html/Registrate.html">Registrate</a>
+              </li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    </nav><br/>
+
+    <!-- Button trigger modal -->
+    <div class="text-center">
+      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+        Intructivo 
+      </button> 
+    </div><br>
+            
+    
+    <div class="container">
+      <div class="caja">
+        <div class="row">
+          <h1 class="text-center">Busca a la persona perdida</h1>
+          <br />
+          <hr>
+          <p>
+            Esta herramienta le permitirá buscar en nuestra base de datos, para encontrar registro de personas desaparecidas con la enfermedad de Alzheimer, llene cualquiera de los campos para buscar.
+          </p>
+          
+          
+            <form class="d-flex" id="allform">
+              <!--<input class="form-control me-2" type="search" placeholder="" aria-label="Search">-->
+              
+              <div class="row row-cols-1 row-cols-lg-4" >
+                <div class="col">
+                  <label for="nombre">Nombres</label>
+                  <input type="text" class="form-control me-2" name="nombres" id="nombres" placeholder="Nombres">
+                </div>
+      
+                <div class="col">
+                  <label for="apellidos">Apellidos</label>
+                  <input type="text" class="form-control me-2" name="apellidos" id="apellidos" placeholder="Primer apellido ">
+                </div>
+
+                <div class="col">
+                  <label for="apellidos"></label>
+                  <input type="text" class="form-control me-2" name="apellidos" id="apellidos" placeholder="Segundo apellido">
+                </div>
+
+                <div class="col">
+                  <label for="cedula">Cedula</label>
+                  <input type="number" class="form-control me-2" name="cedula" id="cedula" placeholder="Cedula">
+                </div>
+
+              </div>
+
+            </form>
+            
+        </div>
+
+        <br/>
+        
+        <div class="text-center">
+          <button type="button" class="btn btn-success btn-lg">Buscar</button>
+        </div>
+          
+        
+        <hr>
+        <br>
+
+        <!-- Button trigger modal -->
+        <center><button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#de" class="text-center">
+          Escanear Código QR
+        </button></center>
+
+        <!-- Modal -->
+        <div class="modal fade" id="de" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">de
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Escanear el código</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                
+                <p>Para escanear el código impreso en su pulsera abre la aplicación de cámara y escanea el código</p><br>
+                <div class="container">
+                <img class="text-center" src="img/ScannerQR.jpg" alt="" width="100%">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+              
+
+      <br />
+        <div class="caja">
+          <div class="row">
+              <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col">
+                  <div class="text-center" >
+                  <center><h2>Alzheimer</h2></center>
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/WRc1cXJUKoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+      
+                <div class="col">
+                  <div class="text-center" >
+                    <center><h2>Vejez</h2></center>
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/RxOep3X1_yQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <h2 class="text-center">Etapas del Alzheimer</h2>
+            <p>
+              La enfermedad de Alzheimer generalmente avanza lentamente en tres etapas: una leve (etapa temprana), una moderada (etapa media) y una grave (etapa final). Dado que el Alzheimer afecta a las personas de diferentes formas, cada persona experimentará síntomas, o atravesará las etapas del Alzheimer de una forma distinta.
+            </p>
+  
+            <h2 class="text-center">Avances en la enfermedad</h2>
+            <p>
+              Los síntomas de la enfermedad de Alzheimer empeoran con el tiempo, aunque la velocidad a la que avanza la enfermedad varía. En promedio, una persona con Alzheimer vive de cuatro a ocho años después del diagnóstico, pero puede vivir hasta 20 años, dependiendo de otros factores. Los cambios en el cerebro relacionados con el Alzheimer comienzan años antes de que aparezcan los signos de la enfermedad. Este período de tiempo, que puede durar años, se conoce como Alzheimer preclínico. <br>
+  
+              Las etapas que siguen brindan una idea general de cómo cambian las habilidades una vez que aparecen los síntomas y solo debe usarse como guía general. Se separan en tres categorías diferentes: enfermedad de Alzheimer leve, enfermedad de Alzheimer moderada y enfermedad de Alzheimer grave. Tenga en cuenta que puede ser difícil ubicar a una persona con Alzheimer en una etapa específica, ya que las etapas se superponen. <br>
+  
+              Se espera que la cantidad de latinos con Alzheimer que viven en Estados Unidos aumente a 1,3 millones para el año 2050.  Un informe anual publicado por la Alzheimer's Association, revela la carga de la enfermedad de Alzheimer y la demencia en las personas, los cuidadores, el gobierno y el sistema de atención médica de la nación. El informe especial adjunto, Race, Ethnicity and Alzheimer’s in America (Raza, origen étnico y alzhéimer en Estados Unidos), examina las perspectivas y experiencias de los asiáticos, afroamericanos, hispanos, nativos estadounidenses y blancos con respecto a la atención del alzhéimer y la demencia. El informe también examina el impacto devastador que la pandemia de la COVID-19 está teniendo en las personas que sufren de alzhéimer y en sus cuidadores.
+            </p>
+  
+            <div class="row">
+              <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col">
+                  <div class="text-center" >
+                    <h2 class="text-center">Enfermedad de Alzheimer leve (Etapa temprana)</h2>
+                    <p>
+                      En la etapa temprana del Alzheimer, la persona puede desenvolverse de forma independiente. Es posible que pueda conducir, trabajar y participar de actividades sociales. A pesar de esto, la persona puede sentir que tiene episodios de pérdida de memoria, que incluyen olvidarse palabras familiares o la ubicación de objetos cotidianos. <br>
+  
+                      Los amigos, familiares y otras personas comienzan a notar las dificultades. Durante una entrevista médica detallada, es posible que los médicos puedan detectar problemas de memoria o concentración. Las dificultades comunes incluyen: <br>
+  
+                      <ul class="text-start">
+                        <li>Problemas para encontrar la palabra o el nombre correctos</li>
+                        <li>Dificultad para recordar nombres cuando se presenta a personas nuevas</li>
+                        <li>Dificultad para realizar tareas en entornos sociales o laborales.</li>
+                        <li>Olvidarse de algo que acaba de leer</li>
+                        <li>Perder o traspapelar un objeto valioso</li>
+                        <li>Tener más problemas para planificar u organizar</li>
+                      </ul>
+                    </p>
+                    <br>
+                    <img class="text-center"  src="img/fpm-fases-enfermedad-de-alzheimer.png"  width="350"  >
+  
+                  </div>
+                </div>
+                <br>
+                <div class="col">
+                  <div class="text-center" >
+                    <h2 class="text-center"> Enfermedad de Alzheimer moderada (Etapa media) </h2>
+                    <p>
+                      El Alzheimer moderado generalmente constituye la etapa más prolongada y puede durar muchos años. A medida que la enfermedad avanza, la persona con Alzheimer requerirá un mayor nivel de atención. Durante la etapa moderada del Alzheimer, las personas pueden tener más dificultades para realizar tareas como pagar facturas, pero pueden recordar detalles significativos de su vida. Es posible que note que la persona con Alzheimer confunde palabras, se frustra o enoja, o actúa de forma inesperada (por ejemplo, no quiere bañarse). El daño a las células nerviosas del cerebro puede dificultar la expresión de pensamientos y la realización de tareas cotidianas. En este punto, otros podrán notar los síntomas, que pueden incluir:<br>
+  
+                      <ul class="text-start">
+                        <li>Olvidarse eventos o información de la historia personal</li>
+                        <li>Sentirse malhumorado o retraído, especialmente en situaciones social o mentalmente exigentes </li>   
+                        <li>No poder recordar la dirección o el número de teléfono propios, o la escuela o universidad donde se graduó</li>    
+                        <li>Confusión sobre la ubicación y fecha actuales</li>    
+                        <li>Necesitar ayuda para elegir la ropa adecuada para la temporada o la ocasión</li>
+                        <li>Problema para controlar la necesidad de ir al baño </li>  
+                        <li>Cambios en los patrones de sueño, como dormir durante el día y estar inquieto durante la noche</li>  
+                        <li>Aumento del riesgo de desorientarse y perderse</li>  
+                        <li>Cambios en la personalidad y el comportamiento, como el recelo y el delirio, o comportamiento repetitivo como retorcer las manos o cortar papeles</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  <br> 
+            <h2 class="text-center">Enfermedad de Alzheimer grave (Etapa final)</h2>
+            <p>
+              En la etapa final de esta enfermedad, las personas pierden la capacidad de responder a su entorno, de llevar adelante una conversación y, eventualmente, de controlar los movimientos. Todavía pueden decir palabras o frases, pero la comunicación se torna difícil. A medida que la memoria y las habilidades cognitivas empeoran, es posible que ocurran cambios significativos en la personalidad y que las personas necesiten mucha ayuda con las tareas diarias. En esta etapa, las personas pueden: <br>
+  
+              <li>Necesitar asistencia todo el tiempo con las actividades diarias y el cuidado personal</li>
+              <li>Perder la noción de experiencias recientes y los hechos que las rodean</li>
+              <li>Experimentar cambios en las capacidades físicas, incluida la capacidad de hablar, sentarse y, eventualmente, tragar</li>
+              <li>Tener más dificultad para comunicarse</li>
+              <li>Volverse vulnerables a infecciones, especialmente neumonía</li>
+            </p>
+            <br>
+  
+            <div class="row row-cols-1 row-cols-lg-1">
+              <div class="col text-center" >
+                <img  src="img/alzheimer-demencia-etapa-tardia-final-teaserimage.jpg" alt="" class="img-fluid" width="1000">
+              </div>
+            </div>
+        </div>
+      </div>
+    <br />
+
+    <footer class="pie">
+      <p class="text-center">
+        Todos los Derechos Reservados &copy; 2021 <br />
+        Diseñado por Luis Ayala, Jenifer Barraza, David Pérez <br />
+        www.dominio.com
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+  <script src="../js/bootstrap.min.js"></script>
+  <title>Trabaja con Nosotros</title>
+</head>
+<body>
+  <img src="../img/banner2.jpg" alt="" width="100%">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <!--
+            <li class="nav-item">
+            <a class="nav-link" href="#">Catalogo</a>
+          </li>
+          -->
+          
+
+          <li class="nav-item">
+            <a class="nav-link" href="../html/Contactenos.html">Contactenos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../html/PQR.html">Peticiones Quejas y Reclamos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../html/Trabaja_con_nosotros.html">Trabaja con nosotros</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../html/fromulario_persona_Alzheimer.html">Formulario de persona con Alheimer</a>
+          </li>
+        </ul>
+
+        <span class="navbar-text">*-*</span>
+      </div>
+    </div>
+  </nav><br/>
+
+  
+
+  <div class="container">
+    <form id="allForm">
+      <div class="caja">
+        <h1 class="text-center">¿Esta interesado en trabjar con nostros?</h1><br/>
+        <p>
+          En Lost-Old creemos que el talento humano es lo más importante, por lo
+          que nos encantaria saber un poco sobre ti, si eres profesional y estas
+          dispuesto a copartir todos tus conocimonetos y aportar a nuestro
+          proyecto, te invitamos a trabajar con nosotros solo debes llenar el
+          siguiente formulario y envíanos tú Hoja de Vida. ¡Recuerda, tu aporte
+          puede cambiar vidas!
+        </p>
+        <div class="text-center">
+          <img src="../img/trabaja .png" width="400px" class="img-fluid" >
+        </div>
+      </div>
+      <div class="caja">
+        <h1 class="text-center">Envianos tus datos</h1>
+        <br />
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" class="form-control" placeholder="" />
+        </div>
+        <br />
+        <div>
+          <label for="cedula">Cedula</label>
+          <input type="text" name="cedula" id="cedula" class="form-control" placeholder="" />
+        </div><br/>
+        <div>
+          <label for="correo">Correo electroioco </label>
+          <input type="email" name="correo" id="correo" class="form-control" placeholder="" />
+        </div><br/>
+        <div>
+          <label for="fecha_nacimiento">Fecha de nacimineto</label>
+          <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="form-control" placeholder="" />
+        </div><br/>
+        <div>
+          <label for="seleccion">En que te desempeñas</label>
+          <select class="form-select" aria-label="Default select example" name="seleccion" id="seleccion">
+            <option selected>Seleccione</option>
+            <option value="Sistemas">Sistemas</option>
+            <option value="Salud">Salud</option>
+            <option value="Administración">Administración</option>
+          </select>
+        </div><br/>
+        <div class="mb-3">
+          <label for="addhojavida" class="form-label">Agregue su Hoja de vida</label>
+          <input class="form-control" type="file" name="addhojavida" id="addhojavida" />
+        </div>
+        <div>
+          <button type="button" id="botonDeEnvio" class="btn btn-success align-content-center btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Enviar Formulario
+          </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <center>
+                  <p>
+                    Se ha enviado tu infomación satisfactoriamente, agradecemos que estes interesado en trabajar con nosotros, estaremos en contacto con usted.
+                  </p>
+                </center>
+                <div class="container">
+                  <img src="../img/tcn.png" alt="" width="100%">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </form>
+    <div id="error"></div>
+  </div>
+  <footer class="pie">
+    <p class="text-center">
+      Todos los Derechos Reservados &copy; 2021 <br />
+      Diseñado por Luis Ayala, Jenifer Barraza, David Pérez <br />
+      www.dominio.com
+    </p>
+  </footer>
+  <script src="../js/trabaja_con_nosotros.js"></script>
+</body>
+</html>

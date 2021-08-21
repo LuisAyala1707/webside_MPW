@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <script src="../js/bootstrap.min.js"></script>
+    
+    <title>Inicio Sesión</title>
+</head>
+<body>
+  <img src="../img/banner2.jpg" alt="" width="100%">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="# ">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+
+          <!--
+            <li class="nav-item">
+            <a class="nav-link" href="#">Catalogo</a>
+          </li>
+          -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="../html/Contactenos.html">Contactenos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../html/PQR.html">Peticiones Quejas y Reclamos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../html/Trabaja_con_nosotros.html">Trabaja con nosotros</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../html/fromulario_persona_Alzheimer.html">Formulario de persona con Alheimer</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../html/Registrate.html">Registrate</a>
+          </li>
+        </ul>
+
+        <span class="navbar-text"> *-* </span>
+      </div>
+    </div>
+  </nav>
+    <br><br>
+    <div class="container">
+  
+        <div class="card border-dark" class="caja" >
+            <div class="card-header">
+              <h1 class="text-center" >Inicie Sesión</h1>
+            </div>
+            <form class="px-4 py-3"><!--agrega padin al formulario-->
+              <div class="text-center">
+                <img src="../img/inicio sesion .png" width="200px" class="img-fluid" >
+              </div><br>
+              <div class="mb-3">
+                <label for="usuario" class="form-label">Correo Electronico</label> 
+                <input type="email" class="form-control" id="usuario" name="usuario" placeholder="Juanito@ejemplo.com">
+              </div>
+              <div class="mb-3">
+                <label for="contraseña" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Digite contraseña">
+              </div>
+              <div class="mb-3">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="recordarme">
+                  <label class="form-check-label" for="recordarme">Recordarme</label>
+                </div>
+              </div>
+              <input type="button" value="Ingresar" onclick="procesar()" class="btn btn-success"> 
+            </form>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="../html/Registrate.html">¿No tienes cuenta? Registrate</a>  <!-- class="dropdown-item" ==  Sale un cuadro al precionar el link -->
+            <a class="dropdown-item" href="#">Olvide mi contraseña</a>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <footer class="pie">
+      <p class="text-center">
+        Todos los Derechos Reservados &copy; 2021 <br />
+        Diseñado por Luis Ayala, Jenifer Barraza, David Pérez <br />
+        www.dominio.com
+      </p>
+    </footer>
+    <script src="../js/inicio_sesion.js"></script>
+</body>
+
+</html>
